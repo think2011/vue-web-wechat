@@ -17,7 +17,7 @@ export default {
     "Uin"              : 1792621622,
     "UserName"         : "@1caed2b595368449922ed9a16d398f8e80ca96c5ef79862a5aa76ab19b5558c4",
     "NickName"         : "曾浩",
-    "HeadImgUrl"       : "/cgi-bin/mmwebwx-bin/webwxgeticon?seq=398920442&username=@1caed2b595368449922ed9a16d398f8e80ca96c5ef79862a5aa76ab19b5558c4&skey=@crypt_cf81dc07_379ae61cc41327a3d0a5dbe65ee11e01",
+    "HeadImgUrl"       : "/cgi-bin/mmwebwx-bin/webwxgeticon?seq=446987438&username=@ef92f43056fdbea9ea769fd7ce9a19fd9a76edaedff85d1321820aeb3fdfc81e&skey=@crypt_cf81dc07_f237f0bbeff506f5d0f3f1e34b2b4e16",
     "RemarkName"       : "",
     "PYInitial"        : "",
     "PYQuanPin"        : "",

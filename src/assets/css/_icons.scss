@@ -10,3 +10,79 @@
         background-size: 487px 462px;
     }
 }
+
+.web_wechat_add {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+    background-position: -434px -398px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_search {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+    background-position: -60px -432px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+}
+
+.web_wechat_tab_chat {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+    background-position: -150px -96px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+
+    &-hl {
+        background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+        background-position: -185px -96px;
+        -webkit-background-size: 487px 462px;
+        background-size: 487px 462px;
+    }
+}
+
+.web_wechat_tab_public {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+    background-position: -376px -322px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+
+    &-hl {
+        background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+        background-position: -304px -281px;
+        -webkit-background-size: 487px 462px;
+        background-size: 487px 462px;
+    }
+}
+
+.web_wechat_tab_friends {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+    background-position: -220px -96px;
+    -webkit-background-size: 487px 462px;
+    background-size: 487px 462px;
+
+    &-hl {
+        background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/css/3d77c66cd37282eb9aae25295f7b0302@2x.png) no-repeat;
+        background-position: -304px -246px;
+        -webkit-background-size: 487px 462px;
+        background-size: 487px 462px;
+
+    }
+}
