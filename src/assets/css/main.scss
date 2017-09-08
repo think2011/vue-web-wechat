@@ -1,0 +1,18 @@
+@import "reset";
+@import "icons";
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, Arial, sans-serif;
+    background: url(//res.wx.qq.com/a/wx_fed/webwx/res/static/img/2zrdI1g.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
