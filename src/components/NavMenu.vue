@@ -17,16 +17,16 @@
       <input type="text" placeholder="搜索">
     </div>
 
-    <tabs class="skin-nav">
+    <tabs :value="1" class="skin-nav">
       <tab head="<i class='web_wechat_tab_chat'></i>"
            head-active="<i class='web_wechat_tab_chat web_wechat_tab_chat-hl'></i>"
            title="聊天">
-        ok2
+        <chat-list/>
       </tab>
       <tab head="<i class='web_wechat_tab_public'></i>"
            head-active="<i class='web_wechat_tab_public web_wechat_tab_public-hl'></i>"
            title="阅读">
-        ok3
+        <article-list/>
       </tab>
       <tab head="<i class='web_wechat_tab_friends'></i>"
            head-active="<i class='web_wechat_tab_friends web_wechat_tab_friends-hl'></i>"
@@ -43,11 +43,15 @@
   import api from '../api'
   import tabs from '../components/Tabs'
   import tab from '../components/Tab'
+  import ChatList from '../components/ChatList'
+  import ArticleList from '../components/ArticleList'
 
   export default {
     components: {
       tabs,
-      tab
+      tab,
+      ChatList,
+      ArticleList
     },
 
     data() {
@@ -56,6 +60,9 @@
 
     computed: {
       ...mapState(['user'])
+    },
+
+    mounted() {
     },
 
     methods: {}
@@ -67,6 +74,7 @@
     width: 280px;
     height: 100%;
     background: #2e3238;
+    position: relative;
 
     .head {
       padding: 18px;
@@ -132,6 +140,13 @@
         padding-left: 30px;
         font-size: 12px;
       }
+    }
+
+    .tab-container {
+      width: 100%;
+      position: absolute;
+      top: 153px;
+      bottom: 0;
     }
   }
 </style>

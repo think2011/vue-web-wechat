@@ -1,7 +1,6 @@
 <template>
   <div style="height:100%">
     <login v-if="!$store.state.user.NickName"></login>
-
     <div v-else class="main">
       <div class="chat-container">
         <nav-menu></nav-menu>

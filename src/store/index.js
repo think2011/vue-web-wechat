@@ -10,7 +10,8 @@ Vue.use(Vuex)
 let state = {
   wxParams   : {},
   user       : {},
-  contactList: []
+  contactList: [],
+  articleList: []
 }
 
 state = _state
@@ -39,6 +40,7 @@ const actions = {
 
     commit(types.UPDATE_WX_PARAMS, {...state.wxParams, SyncKey: res.SyncKey})
     commit(types.UPDATE_CONTACT_LIST, res.ContactList)
+    commit(types.UPDATE_ARTICLE_LIST, res.MPSubscribeMsgList)
     commit(types.UPDATE_USER, res.User)
   }
 }
@@ -46,6 +48,9 @@ const actions = {
 const mutations = {
   [types.UPDATE_WX_PARAMS](state, params) {
     state.wxParams = params
+  },
+  [types.UPDATE_ARTICLE_LIST](state, items) {
+    state.articleList = items
   },
   [types.UPDATE_CONTACT_LIST](state, items) {
     state.contactList = items
