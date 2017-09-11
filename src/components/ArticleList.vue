@@ -1,12 +1,13 @@
 <template>
   <div v-bar="{useScrollbarPseudo:true}" class="article-list-container">
     <ul class="article-list">
-      <li class="article-list-item" v-for="item in $store.state.MPSubscribeMsgList">
+      <li class="article-list-item" v-for="item in $store.state.articleList">
         <div class="hd">
           <div class="time">{{item.Time | moment('HH:mm')}}</div>
           <div class="avatar">
+            <!-- TODO ZH 9/11/17  -->
             <img
-                :src="'/api/wx2/cgi-bin/mmwebwx-bin/webwxgeticon?seq=446987438&username=@ef92f43056fdbea9ea769fd7ce9a19fd9a76edaedff85d1321820aeb3fdfc81e&skey=@crypt_cf81dc07_f237f0bbeff506f5d0f3f1e34b2b4e16'"
+                :xsrc="'/api/wx2/cgi-bin/mmwebwx-bin/webwxgeticon?username='+ item.UserName"
                 alt="">
           </div>
           <div class="name">{{item.NickName.substr(0, 4)}}</div>
@@ -113,10 +114,12 @@
           color: #fff;
           max-height: 40px;
           padding-right: 10px;
+          width: 204px;
         }
 
         .cover {
           width: 40px;
+          min-width: 40px;
           height: 40px;
           display: table-cell;
           vertical-align: middle;

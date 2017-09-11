@@ -56,5 +56,21 @@ export default {
       .then((res) => {
         return res.data
       })
+  },
+
+  async getRemainContacts(params) {
+    return http({
+      url   : '/api/wx2/cgi-bin/mmwebwx-bin/webwxgetcontact',
+      method: 'get',
+      params: {
+        r   : Date.now(),
+        lang: 'zh_CN',
+        seq:0,
+        ...params
+      }
+    })
+      .then((res) => {
+        return res.data
+      })
   }
 }

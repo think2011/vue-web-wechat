@@ -17,7 +17,7 @@
       <input type="text" placeholder="搜索">
     </div>
 
-    <tabs :value="1" class="skin-nav">
+    <tabs class="skin-nav">
       <tab head="<i class='web_wechat_tab_chat'></i>"
            head-active="<i class='web_wechat_tab_chat web_wechat_tab_chat-hl'></i>"
            title="聊天">
@@ -31,7 +31,7 @@
       <tab head="<i class='web_wechat_tab_friends'></i>"
            head-active="<i class='web_wechat_tab_friends web_wechat_tab_friends-hl'></i>"
            title="通讯录">
-        ok4
+        <all-contacts/>
       </tab>
     </tabs>
   </div>
@@ -45,13 +45,15 @@
   import tab from '../components/Tab'
   import ChatList from '../components/ChatList'
   import ArticleList from '../components/ArticleList'
+  import AllContacts from '../components/AllContacts'
 
   export default {
     components: {
       tabs,
       tab,
       ChatList,
-      ArticleList
+      ArticleList,
+      AllContacts
     },
 
     data() {
@@ -147,6 +149,10 @@
       position: absolute;
       top: 153px;
       bottom: 0;
+
+      > div:first-child {
+        height: 100%;
+      }
     }
   }
 </style>

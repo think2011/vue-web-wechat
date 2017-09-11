@@ -63,7 +63,9 @@
             this.avatar = res.userAvatar
 
             params.tip = 0
-            this.watchLoginStatus(params)
+            setTimeout(() => {
+              this.watchLoginStatus(params)
+            }, 500)
             break;
 
           case 200:
